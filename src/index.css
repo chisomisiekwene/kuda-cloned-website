@@ -767,7 +767,7 @@ width: 50%;
     }
 
     .summary{
-        width: 80%;
+        width: 100%;
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -784,10 +784,17 @@ width: 50%;
         padding: 20px;
     }
 
+    .summary-container{
+        width: 90%;
+        height: 200px;
+        border-bottom: 1px solid #979797; 
+
+    }
+
     .summary{
         width: 100%;
         padding: 0;
-        height: 90%;
+        height: 100%;
     }
 
     .summary-section1{
@@ -818,6 +825,11 @@ width: 50%;
         gap: 20px;
     }
 
+    .footer{
+        width: 100%;
+        border: none;
+    }
+
     .footer-logo{
         width: 20%;
         height: 20%;
@@ -845,7 +857,7 @@ width: 50%;
     }
     
     .footer-dropdown{
-        width: 60%;
+        width: 100%;
     }
      
     .footer-header, .information{
@@ -881,34 +893,32 @@ width: 50%;
     }
 
     .block2{
-        width: 80%;
-        background-color: red;
+        width: 100%;
         margin-left: 30px;
         margin-bottom: 0;  
         padding: 0;      
     }
 
-    .app-store,
-    .google-play,
-    .kuda-web{
-        width: 80%;
-        background-color: #40196d;
-    }
-
+    
     .warning{
         text-align: center;
-        margin-top: 0
+        margin-top: 0;
+        margin-left: 55px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
 
     .footer-information{
         flex-direction: column;
         gap: 10px;
+        width: 100%;
     }
 
     .copyright{
-        text-align: justify;
-        margin-left: 35px;
+        background-color: red;
+        width: 100%;
+        margin-left: 0;
     }
-
 }
