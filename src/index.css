@@ -1,8 +1,13 @@
 body{
-    max-width: 1440px;
     margin: 0;
+    padding: 0;
     font-family: 'Mulish', sans-serif;
-    background-color: #fff;
+    
+}
+
+.app{
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -129,13 +134,14 @@ a{
     gap: 180px;
     justify-content: center;
     align-items: center;
+    width:80%;
 
 } 
 
-.section1{
+/* .section1{
    width: 50%;
    margin-top: -80px;
-}
+} */
 
 .section2{
     position: relative;
@@ -149,9 +155,6 @@ a{
 .section1{
     width: 40%;
     margin-top: -30px;
-}
-
-.section1{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -280,6 +283,12 @@ a{
     gap: 10px;
     width: 80%;
 }
+
+.app-store,
+.google-play,
+.kuda-web{
+    width: 100%;
+    }
 
 .warning{
     color:#979797;
@@ -586,7 +595,18 @@ width: 50%;
 }
 
 @media screen and (max-width: 600px){
-    .nav, 
+
+    body{
+        max-width: unset;
+       padding: 0;
+       
+    }
+
+    .header-container{
+        width: 100%;
+    }
+
+    .nav,
     .join,
     .location{
         display: none;
@@ -594,21 +614,25 @@ width: 50%;
 
     .main-container{
         text-align: center;
-        width: 80%;
-    }
-
-    .section{
-        display: flex;
-        flex-direction: column;
         width: 100%;
     }
 
+  
+
+    /* .section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    } */
+
 
     .section{
         flex-direction: column;
-        padding-left: 20px;
-        padding-right: 20px;
+        align-items: center;
+        padding: 0;
         gap: 40px;
+        width: 100%;
     }
 
 
@@ -620,18 +644,18 @@ width: 50%;
 
     .section1-header{
         font-size: 25px;
-        width: 60%;
+        width: 100%;
     }
 
     .section1-paragraph{
-        font-size: 11px;
+        font-size: 12px;
         text-align: center;
-        width: 60%;
+        width: 100%;
     }
 
     .section2{
-        width: 50%;
-        height: 300px;
+        width:85%;
+        height: 310px;
     }
 
     .circle{
@@ -659,7 +683,6 @@ width: 50%;
     
     .mobile{
         left: 40px;
-       
     }
     
     .card{
@@ -754,8 +777,15 @@ width: 50%;
         display: none;
     }
 
+    .summary-container{
+        width:  69%;
+        display: flex;
+       justify-content: center;
+        padding: 20px;
+    }
+
     .summary{
-        width: 50%;
+        width: 100%;
         padding: 0;
         height: 90%;
     }
@@ -851,15 +881,25 @@ width: 50%;
     }
 
     .block2{
-        width: 100%;
-        margin-left: 35px;
-        margin-bottom: 0;
+        width: 80%;
+        background-color: red;
+        margin-left: 30px;
+        margin-bottom: 0;  
+        padding: 0;      
+    }
+
+    .app-store,
+    .google-play,
+    .kuda-web{
+        width: 80%;
+        background-color: #40196d;
     }
 
     .warning{
         text-align: center;
         margin-top: 0
     }
+
 
     .footer-information{
         flex-direction: column;
