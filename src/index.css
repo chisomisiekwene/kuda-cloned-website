@@ -425,8 +425,8 @@ a{
     height: 85%;
     position: absolute;
     z-index: 2;
-    top: 23px;
-    left: -13px;
+    top: 18px;
+    left: 18px;
 }
 
 .spend-card{
@@ -615,6 +615,9 @@ width: 50%;
     .main-container{
         text-align: center;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
     }
 
   
@@ -631,7 +634,7 @@ width: 50%;
         flex-direction: column;
         align-items: center;
         padding: 0;
-        gap: 40px;
+        gap: 50px;
         width: 100%;
     }
 
@@ -640,6 +643,8 @@ width: 50%;
         margin-top: 10px;
         align-items: center;
         width: 80%;
+        margin-bottom: 0;
+        margin-top: 0;
     }
 
     .section1-header{
@@ -656,6 +661,8 @@ width: 50%;
     .section2{
         width:85%;
         height: 310px;
+        margin-bottom: 0;
+        margin-top: 0;
     }
 
     .circle{
@@ -699,53 +706,54 @@ width: 50%;
     }
 
     .save-mobile{
-        width: 80%;
-        height: 110%;
-        top: -35px;
-        margin-left: 140px; 
+        width: 70%;
+        height: 130%;
+        top: -20px;
+        left: -100px; 
     }
     
     .save-mobile2{
-        width: 80%;
-        height: 73%;
+        width: 65%;
+        height: 90%;
         top: -53px;
-        left: 15px;
+        left: 50px;
     }
 
     .spend-mobile{
-        width: 65%;
-        height: 85%;
-        top: -25px;
-        left: 12px;
+        width: 60%;
+        height: 100%;
+        top: 10px;
+        left: 17px;
     }
     
     .spend-card{
-        width: 55%;
-        height: 100%;
+        width: 50%;
+        height: 130%;
         position: relative;
-        left: 35px;
-        top: -50px;
+        left: 60px;
+        bottom: 60px;
         z-index: 1;
+        transform: rotate(-5deg);
     }
 
     .send-mobile{
         width: 60%;
-        height: 105%;
+        height: 140%;
         left: -20px;
-        top: -55px;
+        top: -45px;
     }
     
     .send-card{
         width: 60%;
-        height: 60%;
-        top: 50px;
-        left: 90px;
+        height: 90%;
+        top: 90px;
+        left: 140px;
     }
 
     .chat2{
-        width: 40%;
-        top: 22%;
-        left: 80px;
+        width: 50%;
+        top: 50px;
+        left: 100px;
     }
 
     .chart{
@@ -761,7 +769,7 @@ width: 50%;
     }
     
     .invest-image-container{
-        top: 200px;
+        top: 300px;
         width: 80%;
         margin-left: 25px;
     }
@@ -914,11 +922,15 @@ width: 50%;
         flex-direction: column;
         gap: 10px;
         width: 100%;
+        padding-left: 45px;
     }
 
     .copyright{
-        background-color: red;
         width: 100%;
-        margin-left: 0;
+        margin-left: 20px;
+    }
+
+    .contact-span{
+        font-size: 13px;
     }
 }
